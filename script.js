@@ -1,4 +1,9 @@
 /* Новые элементы должны добавляться в список по нажатию на Enter */
+const sendWrapper = document.querySelector('.input-wrapper');
+const sendItems = document.querySelector('.items');
+
+
+
 
 /* Пустые элементы не должны добавляться */
 
