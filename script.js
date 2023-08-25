@@ -1,6 +1,10 @@
 /* Новые элементы должны добавляться в список по нажатию на Enter */
-const sendWrapper = document.querySelector('.input-wrapper');
-const sendItems = document.querySelector('.items');
+const sendInput = document.querySelector('#input');
+const sendItems = document.querySelector('#items');
+
+sendInput.addEventListener('keydown', function (event) {
+    const text = sendInput.value;
+    });
 
 
 
