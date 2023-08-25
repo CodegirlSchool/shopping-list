@@ -2,9 +2,26 @@
 const sendInput = document.querySelector('#input');
 const sendItems = document.querySelector('#items');
 
-sendInput.addEventListener('keydown', function (event) {
-    const text = sendInput.value;
-    });
+sendInput.addEventListener('keydown', function(event) {
+    if (event.key == 'Enter') {
+        const itemText = sendInput.value;
+    
+        const itemNew = document.createElement('div');
+        itemNew.classList.add('element');
+        itemNew.textContent = itemText;
+
+}
+});
+
+
+        // itemNew.addEventListener('click', function () {
+        // itemNew.classList.toggle('done'); 
+
+        // sendInput.value = '';
+    
+       
+
+    
 
 
 
