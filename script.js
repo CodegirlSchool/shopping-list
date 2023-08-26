@@ -5,28 +5,21 @@ const sendItems = document.querySelector('#items');
 sendInput.addEventListener('keydown', function(event) {
     if (event.key == 'Enter') {
         const itemText = sendInput.value;
-    
         const itemNew = document.createElement('div');
-        itemNew.classList.add('items');
+        itemNew.classList.add('block');
         itemNew.textContent = itemText;
 
-        sendInput.value = " ";
-        if (itemText != " ") {
+        itemNew.addEventListener('click', function () {
+        itemNew.classList.toggle('done');
+        })
+
+        sendInput.value = '';
+        if (itemText != '') {
                 sendItems.append(itemNew);
         }
 
     } 
 });
-
-
-        // itemNew.addEventListener('click', function () {
-        // itemNew.classList.toggle('done'); 
-    
-       
-
-    
-
-
 
 
 /* Пустые элементы не должны добавляться */
