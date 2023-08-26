@@ -7,17 +7,20 @@ sendInput.addEventListener('keydown', function(event) {
         const itemText = sendInput.value;
     
         const itemNew = document.createElement('div');
-        itemNew.classList.add('element');
+        itemNew.classList.add('items');
         itemNew.textContent = itemText;
 
-}
+        sendInput.value = " ";
+        if (itemText != " ") {
+                sendItems.append(itemNew);
+        }
+
+    } 
 });
 
 
         // itemNew.addEventListener('click', function () {
         // itemNew.classList.toggle('done'); 
-
-        // sendInput.value = '';
     
        
 
