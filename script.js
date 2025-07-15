@@ -17,16 +17,14 @@ if (event.key == 'Enter') {
 const messageText = input.value;
 
 const newElement = document.creatElement('p');
-newElement.addEventListener('click', function(){
-  newElement.classList.add('done');
+newElement.addEventListener('click', function() {
   newElement.classList.toggle('done');
-
 })
-newMessage.classList.add('items');
-newMessage.textContent = messageText;
+newElement.classList.add('items');
+newElement.textContent = messageText;
 
 if(messageText != '') {
-massagesContainer.append(newMessage);
+massagesContainer.append(newElement);
 }
 
 
