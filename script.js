@@ -16,7 +16,7 @@ input.addEventListener('keydown', function (event){
 if (event.key == 'Enter') {
 const messageText = input.value;
 
-const newElement = document.creatElement('p');
+const newElement = document.createElement('p');
 newElement.addEventListener('click', function() {
   newElement.classList.toggle('done');
 })
